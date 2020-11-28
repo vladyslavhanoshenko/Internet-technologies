@@ -1,0 +1,221 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Внутрішня навігація.Ганошенко В.А</title>
+</head>
+
+<body>
+	<h1>Geographic information system</h1>
+
+	<blockquote>
+		<p>A geographic information system (GIS) is a system designed to capture, store, manipulate, analyze, manage,
+			and present all types of geographical data. The acronym GIS is sometimes used for geographical information
+			science or geospatial information studies to refer to the academic discipline or career of working with
+			geographic information systems and is a large domain within the broader academic discipline of
+			Geoinformatics. In the simplest terms, GIS is the merging of cartography, statistical analysis, and computer
+			science technology.
+			<br>A GIS can be thought of as a system—it digitally makes and "manipulates" spatial areas that may be
+			jurisdictional, purpose, or application-oriented. Generally, a GIS is custom-designed for an organization.
+			Hence, a GIS developed for an application, jurisdiction, enterprise, or purpose may not be necessarily
+			interoperable or compatible with a GIS that has been developed for some other application, jurisdiction,
+			enterprise, or purpose. What goes beyond a GIS is a spatial data infrastructure, a concept that has no such
+			restrictive boundaries.
+			<br>In a general sense, the term describes any information system that integrates, stores, edits, analyzes,
+			shares, and displays geographic information for informing decision making. GIS applications are tools that
+			allow users to create interactive queries (user-created searches), analyze spatial information, edit data in
+			maps, and present the results of all these operations. Geographic information science is the science
+			underlying geographic concepts, applications, and systems.
+			<br>The first known use of the term "Geographic Information System" was by Roger Tomlinson in the year 1968
+			in his paper "A Geographic Information System for Regional Planning". Tomlinson is also acknowledged as the
+			"father of GIS".
+		</p>
+	</blockquote>
+
+	<!--Створіть вертикальне меню-->
+	<p id="zmist">
+		<a href="#historyofdevelopment">History of development</a><br />
+		<a href="#gistechniquesandtechnology">GIS techniques and technology</a><br />
+		<a href="#relatinginfo">Relating information from different sources</a><br />
+		<a href="#gisuncertainties">GIS uncertainties</a><br />
+		<a href="#datarepresentation">Data representation</a><br />
+		<a href="#datacapture">Data capture</a><br />
+	</p>
+
+	<p>GIS is a relatively broad term that can refer to a number of different technologies, processes, and methods.
+		It is attached to many operations and has many applications related to engineering, planning, management,
+		transport/logistics, insurance, telecommunications, and business.
+		For that reason, GIS and location intelligence applications can be the foundation for many location-enabled
+		services that rely on analysis, visualization and dissemination of results for collaborative decision making.
+	</p>
+
+	<!--Створіть мітки (якоря) у заголовків статей-->
+	<hr>
+	<h2 id="historyofdevelopment">History of development</h2>
+	<p>One of the first applications of spatial analysis in epidemiology is the 1832 "Rapport sur la marche et les
+		effets du choléra dans Paris et le département de la Seine". The French geographer Charles Picquet represented
+		the 48 districts of the city of Paris by halftone color gradient according to the percentage of deaths by
+		cholera per 1,000 inhabitants.</p>
+	<p>In 1854 John Snow depicted a cholera outbreak in London using points to represent the locations of some
+		individual cases, possibly the earliest use of a geographic methodology in epidemiology. His study of the
+		distribution of cholera led to the source of the disease, a contaminated water pump (the Broad Street Pump,
+		whose handle he disconnected, thus terminating the outbreak).</p>
+	<p>While the basic elements of topography and theme existed previously in cartography, the John Snow map was unique,
+		using cartographic methods not only to depict but also to analyze clusters of geographically dependent
+		phenomena.</p>
+	<p>The early 20th century saw the development of photozincography, which allowed maps to be split into layers, for
+		example one layer for vegetation and another for water. This was particularly used for printing contours –
+		drawing these was a labour intensive task but having them on a separate layer meant they could be worked on
+		without the other layers to confuse the draughtsman. This work was originally drawn on glass plates but later
+		plastic film was introduced, with the advantages of being lighter, using less storage space and being less
+		brittle, among others. When all the layers were finished, they were combined into one image using a large
+		process camera. Once color printing came in, the layers idea was also used for creating separate printing plates
+		for each colour. While the use of layers much later became one of the main typical features of a contemporary
+		GIS, the photographic process just described is not considered to be a GIS in itself – as the maps were just
+		images with no database to link them to.</p>
+	<p>Computer hardware development spurred by nuclear weapon research led to general-purpose computer "mapping"
+		applications by the early 1960s.</p>
+	<p>The year 1960 saw the development of the world's first true operational GIS in Ottawa, Ontario, Canada by the
+		federal Department of Forestry and Rural Development. Developed by Dr. Roger Tomlinson, it was called the Canada
+		Geographic Information System (CGIS) and was used to store, analyze, and manipulate data collected for the
+		Canada Land Inventory – an effort to determine the land capability for rural Canada by mapping information about
+		soils, agriculture, recreation, wildlife, waterfowl, forestry and land use at a scale of 1:50,000. A rating
+		classification factor was also added to permit analysis.</p>
+	<p>CGIS was an improvement over "computer mapping" applications as it provided capabilities for overlay,
+		measurement, and digitizing/scanning. It supported a national coordinate system that spanned the continent,
+		coded lines as arcs having a true embedded topology and it stored the attribute and locational information in
+		separate files. As a result of this, Tomlinson has become known as the "father of GIS", particularly for his use
+		of overlays in promoting the spatial analysis of convergent geographic data.</p>
+	<p>CGIS lasted into the 1990s and built a large digital land resource database in Canada. It was developed as a
+		mainframe-based system in support of federal and provincial resource planning and management. Its strength was
+		continent-wide analysis of complex datasets. The CGIS was never available commercially.</p>
+	<p>In 1964 Howard T. Fisher formed the Laboratory for Computer Graphics and Spatial Analysis at the Harvard Graduate
+		School of Design (LCGSA 1965–1991), where a number of important theoretical concepts in spatial data handling
+		were developed, and which by the 1970s had distributed seminal software code and systems, such as SYMAP, GRID,
+		and ODYSSEY – that served as sources for subsequent commercial development—to universities, research centers and
+		corporations worldwide.</p>
+	<p>By the early 1980s, M&S Computing (later Intergraph) along with Bentley Systems Incorporated for the CAD
+		platform, Environmental Systems Research Institute (ESRI), CARIS (Computer Aided Resource Information System),
+		MapInfo(MapInfo) and ERDAS (Earth Resource Data Analysis System) emerged as commercial vendors of GIS software,
+		successfully incorporating many of the CGIS features, combining the first generation approach to separation of
+		spatial and attribute information with a second generation approach to organizing attribute data into database
+		structures. In parallel, the development of two public domain systems (MOSS and GRASS GIS) began in the late
+		1970s and early 1980s.</p>
+	<p>In 1986, Mapping Display and Analysis System (MIDAS), the first desktop GIS product emerged for the DOS operating
+		system. This was renamed in 1990 to MapInfo for Windows when it was ported to the Microsoft Windows platform.
+		This began the process of moving GIS from the research department into the business environment.</p>
+	<p>By the end of the 20th century, the rapid growth in various systems had been consolidated and standardized on
+		relatively few platforms and users were beginning to explore viewing GIS data over the Internet, requiring data
+		format and transfer standards. More recently, a growing number of free, open-source GIS packages run on a range
+		of operating systems and can be customized to perform specific tasks. Increasingly geospatial data and mapping
+		applications are being made available via the world wide web.</p>
+	<p>Several authoritative articles on the history of GIS have been published.</p>
+	<a href="#zmist">Зміст</a>
+
+	<hr>
+	<h2 id="gistechniquesandtechnology">GIS techniques and technology</h2>
+	<p>Modern GIS technologies use digital information, for which various digitized data creation methods are used. The
+		most common method of data creation is digitization, where a hard copy map or survey plan is transferred into a
+		digital medium through the use of a CAD program, and geo-referencing capabilities. With the wide availability of
+		ortho-rectified imagery (both from satellite and aerial sources), heads-up digitizing is becoming the main
+		avenue through which geographic data is extracted. Heads-up digitizing involves the tracing of geographic data
+		directly on top of the aerial imagery instead of by the traditional method of tracing the geographic form on a
+		separate digitizing tablet (heads-down digitizing).</p>
+	<a href="#zmist">Зміст</a>
+
+	<hr>
+	<h2 id="relatinginfo">Relating information from different sources</h2>
+	<p>GIS uses spatio-temporal (space-time) location as the key index variable for all other information. Just as a
+		relational database containing text or numbers can relate many different tables using common key index
+		variables, GIS can relate unrelated information by using location as the key index variable. The key is the
+		location and/or extent in space-time.</p>
+	<p>Any variable that can be located spatially, and increasingly also temporally, can be referenced using a GIS.
+		Locations or extents in Earth space–time may be recorded as dates/times of occurrence, and x, y, and z
+		coordinates representing, longitude, latitude, and elevation, respectively. These GIS coordinates may represent
+		other quantified systems of temporo-spatial reference (for example, film frame number, stream gage station,
+		highway mile-marker, surveyor benchmark, building address, street intersection, entrance gate, water depth
+		sounding, POS or CAD drawing origin/units). Units applied to recorded temporal-spatial data can vary widely
+		(even when using exactly the same data, see map projections), but all Earth-based spatial–temporal location and
+		extent references should, ideally, be relatable to one another and ultimately to a "real" physical location or
+		extent in space–time.</p>
+	<p>Related by accurate spatial information, an incredible variety of real-world and projected past or future data
+		can be analyzed, interpreted and represented to facilitate education and decision making. This key
+		characteristic of GIS has begun to open new avenues of scientific inquiry into behaviors and patterns of
+		previously considered unrelated real-world information.</p>
+	<a href="#zmist">Зміст</a>
+
+	<hr>
+	<h2 id="gisuncertainties">GIS uncertainties</h2>
+	<p>GIS accuracy depends upon source data, and how it is encoded to be data referenced. Land surveyors have been able
+		to provide a high level of positional accuracy utilizing the GPS-derived positions. High-resolution digital
+		terrain and aerial imagery, powerful computers and Web technology are changing the quality, utility, and
+		expectations of GIS to serve society on a grand scale, but nevertheless there are other source data that have an
+		impact on overall GIS accuracy like paper maps, though these may be of limited use in achieving the desired
+		accuracy since the aging of maps affects their dimensional stability.</p>
+	<p>In developing a digital topographic data base for a GIS, topographical maps are the main source of aerial
+		photography and satellite images are extra sources for collecting data and identifying attributes which can be
+		mapped in layers over a location facsimile of scale. The scale of a map and geographical rendering area
+		representation type are very important aspects since the information content depends mainly on the scale set and
+		resulting locatability of the map's representations. In order to digitize a map, the map has to be checked
+		within theoretical dimensions, then scanned into a raster format, and resulting raster data has to be given a
+		theoretical dimension by a rubber sheeting/warping technology process.</p>
+	<p>A quantitative analysis of maps brings accuracy issues into focus. The electronic and other equipment used to
+		make measurements for GIS is far more precise than the machines of conventional map analysis. All geographical
+		data are inherently inaccurate, and these inaccuracies will propagate through GIS operations in ways that are
+		difficult to predict.</p>
+	<a href="#zmist">Зміст</a>
+
+	<hr>
+	<h2 id="datarepresentation">Data representation</h2>
+	<p>GIS data represents real objects (such as roads, land use, elevation, trees, waterways, etc.) with digital data
+		determining the mix. Real objects can be divided into two abstractions: discrete objects (e.g., a house) and
+		continuous fields (such as rainfall amount, or elevations). Traditionally, there are two broad methods used to
+		store data in a GIS for both kinds of abstractions mapping references: raster images and vector. Points, lines,
+		and polygons are the stuff of mapped location attribute references. A new hybrid method of storing data is that
+		of identifying point clouds, which combine three-dimensional points with RGB information at each point,
+		returning a "3D color image". GIS thematic maps then are becoming more and more realistically visually
+		descriptive of what they set out to show or determine.</p>
+	<a href="#zmist">Зміст</a>
+
+	<hr>
+	<h2 id="datacapture">Data capture</h2>
+	<p>Data capture—entering information into the system—consumes much of the time of GIS practitioners. There are a
+		variety of methods used to enter data into a GIS where it is stored in a digital format.</p>
+	<p>Existing data printed on paper or PET film maps can be digitized or scanned to produce digital data. A digitizer
+		produces vector data as an operator traces points, lines, and polygon boundaries from a map. Scanning a map
+		results in raster data that could be further processed to produce vector data.</p>
+	<p>Survey data can be directly entered into a GIS from digital data collection systems on survey instruments using a
+		technique called coordinate geometry (COGO). Positions from a global navigation satellite system (GNSS) like
+		Global Positioning System can also be collected and then imported into a GIS. A current trend in data collection
+		gives users the ability to utilize field computers with the ability to edit live data using wireless connections
+		or disconnected editing sessions. This has been enhanced by the availability of low-cost mapping-grade GPS units
+		with decimeter accuracy in real time. This eliminates the need to post process, import, and update the data in
+		the office after fieldwork has been collected. This includes the ability to incorporate positions collected
+		using a laser rangefinder. New technologies also allow users to create maps as well as analysis directly in the
+		field, making projects more efficient and mapping more accurate.</p>
+	<p>Remotely sensed data also plays an important role in data collection and consist of sensors attached to a
+		platform. Sensors include cameras, digital scanners and LIDAR, while platforms usually consist of aircraft and
+		satellites. Recently with the development of Miniature UAVs, aerial data collection is becoming possible at much
+		lower costs, and on a more frequent basis. For example, the Aeryon Scout was used to map a 50-acre area with a
+		Ground sample distance of 1 inch (2.54 cm) in only 12 minutes.</p>
+	<p>The majority of digital data currently comes from photo interpretation of aerial photographs. Soft-copy
+		workstations are used to digitize features directly from stereo pairs of digital photographs. These systems
+		allow data to be captured in two and three dimensions, with elevations measured directly from a stereo pair
+		using principles of photogrammetry. Analog aerial photos must be scanned before being entered into a soft-copy
+		system, for high-quality digital cameras this step is skipped.</p>
+	<p>Satellite remote sensing provides another important source of spatial data. Here satellites use different sensor
+		packages to passively measure the reflectance from parts of the electromagnetic spectrum or radio waves that
+		were sent out from an active sensor such as radar. Remote sensing collects raster data that can be further
+		processed using different bands to identify objects and classes of interest, such as land cover.</p>
+	<p>When data is captured, the user should consider if the data should be captured with either a relative accuracy or
+		absolute accuracy, since this could not only influence how information will be interpreted but also the cost of
+		data capture.</p>
+	<p>After entering data into a GIS, the data usually requires editing, to remove errors, or further processing. For
+		vector data it must be made "topologically correct" before it can be used for some advanced analysis. For
+		example, in a road network, lines must connect with nodes at an intersection. Errors such as undershoots and
+		overshoots must also be removed. For scanned maps, blemishes on the source map may need to be removed from the
+		resulting raster. For example, a fleck of dirt might connect two lines that should not be connected.</p>
+	<a href="#zmist">Зміст</a>
+</body>
+
+</html>

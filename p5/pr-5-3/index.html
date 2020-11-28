@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>Зображення як елемент і в якості фону</title>
+</head>
+
+<body background="fon.gif">
+    <h1>Зображення</h1>
+    <h3>Малюнок з чутливими областями (image map)</h3>
+    <img src="../images/sochi01.jpg" usemap="#treeshapes" width="600" height="300">
+    <map name="treeshapes">
+        <area shape="rect" coords="0,0, 200,300", href="https://en.wikipedia.org/wiki/Geographic_information_system">
+        <area shape="rect" coords="200,0, 400,300", href="https://en.wikipedia.org/wiki/Geographic_information_science">
+        <area shape="rect" coords="400,0, 600,300", href="https://en.wikipedia.org/wiki/Geovisualization">
+    </map>
+
+    <h3>Елемент IMG</h3>
+    <p>Елемент IMG впроваджує зображення в поточний документ у місці визначення елемента. Елемент IMG не має вмісту -
+        він заміщається "на ходу" зображенням, зазначеним в атрибуті SRC.</p>
+    <img src="../images/delicious.jpg">
+
+    <h3>Альтернативний текст</h3>
+    <p>Атрибут ALT надає короткий опис зображення. Він містить альтернативний текст, який відображається, якщо
+        зображення не може бути виведено. Користувальницькі агенти повинні відображати альтернативний текст, якщо вони
+        не підтримують зображення, або сконфігуровані так, щоб не показувати зображення (відключений показ зображень).
+    </p>
+    <img src="../images/ettlingen01.jpg" alt="Vladyslav Hanoshenko lab05" title="Alt attribute is not displayed">
+    <br>
+    <img src="../images/ettlingen01wrongpath.jpg" alt="Vladyslav Hanoshenko lab05 displayed"
+        title="Alt attribute is displayed">
+
+    <h3>Розміри зображення</h3>
+    <p>Атрибути WIDTH і HEIGHT задають розміри області зображення. Якщо обидва атрибуту не задані, розмір зображення
+        буде визначено після його повного завантаження, після чого розміри області будуть змінені для розміщення змісту
+        картинки.</p>
+    <p>Якщо заданий тільки один з атрибутів, то інший розмір буде вирахуваний у відповідність з пропорціями зображення і
+        заданим атрибутом.</p>
+    <p>При вказівці обох атрибутів ПА «впише» зображення в область із зазначеними розмірами.</p>
+
+    <img src="../images/ettlingen02.jpg" width="300px" height="400px">
+    <br>
+    <img src="../images/ettlingen03.jpg" width="300px">
+
+    <div>
+        <h3>Вирівнювання зображення</h3>
+        <p><img src="../images/korolev01.jpg" width="100" align="left">Атрибут ALIGN задає вирівнювання зображення як
+            елемента рядка
+            або робить його «плаваючим». У іншому випадку зображення перестає бути рядковим елементом і наступний за ним
+            текст буде «обтікати» його.</p>
+        <br>
+    </div>
+
+    <h3>Фонові зображення</h3>
+    <p>У деяких елементах атрибут BACKGROUND дозволяє вказати зображення в якості фону. У цьому випадку воно заливає всю
+        область елемента, починаючи з лівого верхнього кута.</p>
+    <table background="../images/korolev01.jpg" width="600px">
+        <tr>
+            <td>...</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
