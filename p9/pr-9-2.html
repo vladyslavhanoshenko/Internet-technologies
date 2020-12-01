@@ -1,71 +1,86 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Оформлення вертикального меню</title>
-<style type="text/css">
-html{
-	background:#f0f0f0;
-}
-#left{
-	width:200px;
-	background:#fff;
-}
-#left ul{
-	
-}
-#left li{
-	
-}
-#left li a{
-	
-}
-#left li a:hover{
-	
-}
-#left li ul{
-	
-}
-#left li li{
-	
-}
-</style>
+	<meta charset="utf-8">
+	<title>Оформлення вертикального меню. Ганошенко В.А</title>
+	<style type="text/css">
+		html {
+			background: #f0f0f0;
+		}
+
+		#left {
+			width: 200px;
+			background: #fff;
+
+		}
+
+		#left ul {
+			position: absolute;
+
+		}
+
+		#left li {
+			list-style-image: url(i/minus.gif);
+
+		}
+
+		#left li a {
+			color: dodgerblue;
+
+		}
+
+		#left li a:hover {
+			outline-style: dotted;
+		}
+
+		#left li ul {
+			position: relative;
+			right: 20px;
+		}
+
+		#left li li {
+			list-style-image: url(i/point.gif);
+		}
+	</style>
 </head>
+
 <body>
-<div id="left">
-	<ul>
-		<li><a href="#">Фільми</a>
-			<ul>
-				<li><a href="#">Экшн</a></li>
-				<li><a href="#">Мелодрами</a></li>
-				<li><a href="#">Серіали</a></li>
-				<li><a href="#">Сімейні</a></li>
-			</ul>
-		</li>
-		<li><a href="#">Музика</a>
-			<ul>
-				<li><a href="#">Класика</a></li>
-				<li><a href="#">Джаз</a></li>
-				<li><a href="#">Рок</a></li>
-				<li><a href="#">Грандж</a></li>
-			</ul>
-		</li>
-		<li><a href="#">Софт</a>
-			<ul>
-				<li><a href="#">Графіка</a></li>
-				<li><a href="#">3D-моделювання</a></li>
-				<li><a href="#">Машинопис</a></li>
-				<li><a href="#">Перекладачі</a></li>
-			</ul>
-		</li>
-		<li><a href="#">Ігри</a>
-			<ul>
-				<li><a href="#">РПГ</a></li>
-				<li><a href="#">Шутери</a></li>
-				<li><a href="#">Пасьянси</a></li>
-			</ul>
-		</li>
-	</ul>
-</div>
+	<div id="left">
+		<ul>
+			<li><a href="#">Фільми</a>
+				<ul>
+					<li><a href="#">Экшн</a></li>
+					<li><a href="#">Мелодрами</a></li>
+					<li><a href="#">Серіали</a></li>
+					<li><a href="#">Сімейні</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Музика</a>
+				<ul>
+					<li><a href="#">Класика</a></li>
+					<li><a href="#">Джаз</a></li>
+					<li><a href="#">Рок</a></li>
+					<li><a href="#">Грандж</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Софт</a>
+				<ul>
+					<li><a href="#">Графіка</a></li>
+					<li><a href="#">3D-моделювання</a></li>
+					<li><a href="#">Машинопис</a></li>
+					<li><a href="#">Перекладачі</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Ігри</a>
+				<ul>
+					<li><a href="#">РПГ</a></li>
+					<li><a href="#">Шутери</a></li>
+					<li><a href="#">Пасьянси</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
 </body>
+
 </html>
