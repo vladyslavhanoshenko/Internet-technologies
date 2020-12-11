@@ -1,0 +1,55 @@
+body{
+    background-color: gray;
+}
+
+section{
+    display: block;
+}
+
+#container{
+    width: 70%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+header{
+    display: block;
+    /* margin-left: auto;
+    margin-right: auto; */
+    background-color: rgba(51, 51, 155, 0.836);
+    height: 80px;
+}
+
+#content{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+
+}
+
+#leftpanel{
+    width: 20%;
+    float: left;
+    background-color: rgb(206, 231, 166);
+    margin-bottom: 10px;
+}
+
+#center{
+    
+}
+
+#rightpanel{
+    width: 20%;
+    float: right;
+    background-color: rgb(216, 214, 214);
+
+}
+
+footer{
+    clear: both;
+    background-color: yellow;
+    height: 80px;
+}
+

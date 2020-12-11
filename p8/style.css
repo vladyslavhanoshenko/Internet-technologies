@@ -1,16 +1,16 @@
 p{
-    color: black;
-    background: burlywood;
+    color: black; /* use hex or rgb */
+    background: burlywood; /* use hex or rgb */
     text-align: right;
 }
 
 h1,h2{
     text-align: right;
     font-family: Arial, Helvetica, sans-serif;
-    color: red;
+    color: red; /* use hex or rgb */
 }
 
 em{
-    color: green;
+    color: green; /* use hex or rgb */
 }
 
