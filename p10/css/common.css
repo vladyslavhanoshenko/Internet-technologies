@@ -22,18 +22,17 @@ header{
 
 #content{
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 #leftpanel{
     width: 20%;
     float: left;
     background-color: rgb(206, 231, 166);
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 #center{
-    padding-left: 10px;
+    padding-left: 21%;
 }
 
 #rightpanel{
@@ -43,8 +42,8 @@ header{
 }
 
 footer{
-    /* clear: both; */
     background-color: yellow;
     height: 80px;
+    clear: both;
+    margin-top: 10px;
 }
-
