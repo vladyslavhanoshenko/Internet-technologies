@@ -16,8 +16,6 @@ section{
 
 header{
     display: block;
-    /* margin-left: auto;
-    margin-right: auto; */
     background-color: rgba(51, 51, 155, 0.836);
     height: 80px;
 }
@@ -25,30 +23,27 @@ header{
 #content{
     margin-top: 10px;
     margin-bottom: 10px;
-    
-
 }
 
 #leftpanel{
     width: 20%;
     float: left;
     background-color: rgb(206, 231, 166);
-    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 #center{
-    
+    padding-left: 10px;
 }
 
 #rightpanel{
     width: 20%;
     float: right;
     background-color: rgb(216, 214, 214);
-
 }
 
 footer{
-    clear: both;
+    /* clear: both; */
     background-color: yellow;
     height: 80px;
 }
