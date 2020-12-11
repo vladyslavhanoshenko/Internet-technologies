@@ -47,3 +47,29 @@ footer{
     clear: both;
     margin-top: 10px;
 }
+
+@media print{
+    header, #leftpanel, #rightpanel, footer{
+        background: none;
+        display: none;
+    }
+    a:after {content:" (" attr(href) ")";}
+
+    a{
+        color: black;
+    }
+
+    #leftpanel{
+        float: none;
+    }
+
+    #container{
+        width: 100%;
+    }
+
+    #center{
+        padding-left: 0%;
+        width: 95%;
+        padding-right: 20px;
+    }
+}
