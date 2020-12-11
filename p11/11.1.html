@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11.1, Ганошенко В.А</title>
+    <script>
+        // 11.1
+        function getName(){
+            var result = prompt("Доброго дня. Як вас звати?");
+            if (result != null){
+                document.getElementById('greeting').innerHTML = 'Привіт, ' + result;
+            }
+        }
+
+        // 11.1.2
+        function getOperationResult(){
+            var result = prompt("Введіть два числа для множення через ,");
+            if (result != null){
+                var numbers = result.split(',');
+                if (numbers.length != 2){
+                    alert('Для винання операції потрібно ввести два числа через ',' . Спробуйте ще раз')
+                }
+                document.getElementById('operationResult').innerHTML = 'Результат операції: ' + numbers[0] * numbers[1];
+            }
+        }
+    </script>
+</head>
+<body onload="getName()">
+    <h2 id="greeting"></h2>
+    <h2 id="operationResult"></h2>
+    <button onclick="getOperationResult()">Помножити два числа</button>
+</body>
+</html>
