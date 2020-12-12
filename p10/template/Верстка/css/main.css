@@ -12,10 +12,6 @@ body {
   clear: both;
 }
 
-/* div {
-	box-sizing: border-box;
-} */
-
 header {
   background: url(../img/first-bg.jpg) no-repeat center top / cover;
 
@@ -161,22 +157,14 @@ h1 {
   float: right;
 }
 
-footer .container > * {
-  border: 1px solid red;
+footer p {
+  color: #777777;
+  font-size: 14px;
+  line-height: 1.55em;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-
-/* .middleh3{
-	font-size: 18px;
-	margin-bottom: 5px;
-	text-align: right;
-}
-
-.middlep{
-	color: #777777;
-	font-size: 14px;
-	line-height: 1.55em;
-	text-align: right;
-} */
 
 .aboutuscontent h3 {
   font-size: 18px;
@@ -202,7 +190,6 @@ footer .container > * {
 
 .textleft div.t_title h3 {
   padding-right: 50px;
-
 }
 
 .textleft div.t_title p {
