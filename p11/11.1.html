@@ -22,6 +22,7 @@
                     alert('Для винання операції потрібно ввести два числа через ',' . Спробуйте ще раз')
                 }
                 document.getElementById('operationResult').innerHTML = 'Результат операції: ' + numbers[0] * numbers[1];
+                document.getElementById('triggerButton').hidden = true;
             }
         }
     </script>
@@ -29,6 +30,6 @@
 <body onload="getName()">
     <h2 id="greeting"></h2>
     <h2 id="operationResult"></h2>
-    <button onclick="getOperationResult()">Помножити два числа</button>
+    <button id="triggerButton" onclick="getOperationResult()">Помножити два числа</button>
 </body>
 </html>
