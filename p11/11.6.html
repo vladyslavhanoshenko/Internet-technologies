@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11.6 Hanoshenko Vßlad</title>
+</head>
+<body>
+    <script>
+        /* var result = null;
+        while(result == null || result == ''){
+            result = prompt("Доброго дня. Як вас звати?");
+        }
+        document.write ("<h2>Привіт, " + result + "<\/h2>"); */
+        do{
+            var result = prompt("Доброго дня. Як вас звати?");
+        }
+        while(result == null || result == '');
+        document.write ("<h2>Привіт, " + result + "<\/h2>");
+    </script>
+</body>
+</html>

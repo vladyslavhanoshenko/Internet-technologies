@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11.3, Ганошенко В.А</title>
+    <script>
+        // 11.3
+        function getName(){
+            var returnedResult = prompt("Доброго дня. Як вас звати?");
+            var result = returnedResult == null || returnedResult == '' 
+            ? 'Привіт, незнайомець' 
+            : 'Привіт, ' + returnedResult;
+            document.getElementById('greeting').innerHTML = result;
+        }
+    </script>
+</head>
+<body onload="getName()">
+    <h2 id="greeting"></h2>
+</body>
+</html>
