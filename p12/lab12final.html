@@ -18,6 +18,11 @@
             return tot
         }
 
+        function recursiveRadiationExposure(start, stop, step) {
+            if (start < stop) return f(start) * step + recursiveRadiationExposure(start + step, stop, step);
+            else return 0;
+        }
+
         function f(x) {
             return 10 * Math.pow(Math.E, (Math.log(0.5) / 5.27 * x))
         }
@@ -26,8 +31,12 @@
         document.write("<p>Test case 2: radiationExposure(5, 11, 1)<br>" + radiationExposure(5, 11, 1) + "<\/p>");
         document.write("<p>Test case 3: radiationExposure(0, 11, 1)<br>" + radiationExposure(0, 11, 1) + "<\/p>");
         document.write("<p>Test case 4: radiationExposure(40, 100, 1.5)<br>" + radiationExposure(40, 100, 1.5) + "<\/p>");
+        document.write("<hr>");
+        document.write("<p>Test case 1: recursiveRadiationExposure(0, 5, 1)<br>" + recursiveRadiationExposure(0, 5, 1) + "<\/p>");
+        document.write("<p>Test case 2: recursiveRadiationExposure(5, 11, 1)<br>" + recursiveRadiationExposure(5, 11, 1) + "<\/p>");
+        document.write("<p>Test case 3: recursiveRadiationExposure(0, 11, 1)<br>" + recursiveRadiationExposure(0, 11, 1) + "<\/p>");
+        document.write("<p>Test case 4: recursiveRadiationExposure(40, 100, 1.5)<br>" + recursiveRadiationExposure(40, 100, 1.5) + "<\/p>");
     </script>
-
 </body>
 
 </html>
