@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slab-12.4 Hanoshenko Vladyslav</title>
+</head>
+
+<body>
+    <script>
+        var result = null;
+        do {
+            result = prompt("Доброго дня. Введіть ваше ПІБ через пробіл");
+        }
+        while (result.split(' ').length != 3);
+        var splittedResult = result.split(' ');
+        document.write("<blockquote>")
+        document.write("    <p><strong>Ваші дані: <\/strong><\/p>");
+        document.write("    <p><strong>Прізвище: <\/strong>" + splittedResult[0] + "<\/p>");
+        document.write("    <p><strong>Імя: <\/strong>" + splittedResult[1] + "<\/p>");
+        document.write("    <p><strong>По-батькові: <\/strong>" + splittedResult[2] + "<\/p>");
+        document.write("<\/blockquote>");
+        document.write("<p><i><strong>Вітаємо вас з реєстрацією на нашому сайті!<\/strong><\/i><\/p>");
+    </script>
+</body>
+
+</html>

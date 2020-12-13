@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-5 Hanoshenko Vladyslav</title>
+</head>
+<body>
+    <script>
+        function getAriphmeticMeanWithArray(){
+            var parsedResult = prompt("Введіть будь-яке число або числа. Якщо чисел декілька - розділяйте їх комою");
+            var result = parsedResult.split(',');
+
+            var intResultArray = [];
+            for(var i = 0; i < result.length; i++){
+                intResultArray.push(parseInt(result[i]));
+            }
+            document.write("<p><strong>Введені числа<\/strong>:");
+            intResultArray.forEach(element => {
+                document.write("<br>" + element);
+            });
+            document.write("<\/p>");
+            document.write("<p><strong>Середнє значення: " + intResultArray.reduce((a, b) => a + b, 0) / intResultArray.length + "<\/strong><\/p>");
+        }
+        getAriphmeticMeanWithArray();
+    </script>
+</body>
+</html>
