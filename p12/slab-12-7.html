@@ -11,19 +11,22 @@
     <script>
         var columnsNumber = prompt("Введіть число стовбчиків")
         var rowsNumbers = prompt("Введіть число рядків")
-        document.write("<table>")
+        document.write("<table style='border:1px solid black; border-collapse: collapse'>")
         var columnValueCounter = 0;
-        for (var row = 0; row < rowsNumbers; row++) {
+        for (var row = 1; row <= rowsNumbers; row++) {
             document.write("<tr>")
 
             for (var column = 1; column <= columnsNumber; column++) {
-                if(row == 0) document.write("<td bgcolor='4d4dff'>" + column + " столбец" + "<\/td>");
-                else document.write("<td>" + (column + columnValueCounter) + "<\/td>");
-                if(column == columnsNumber) columnValueCounter += column;
+                if (row == 1) document.write("<td style='border:1px solid black; background:#4d4dff; border-collapse:collapse; color:white; font-weight: bold;'>" + column + " столбец" + "<\/td>");
+                else document.write(row == 3
+                    ? "<td style='border:1px solid black; background:white; border-collapse:collapse'>" + (column + columnValueCounter) + "<\/td>"
+                    : "<td style='border:1px solid black; background:#66b3ff; border-collapse:collapse'>" + (column + columnValueCounter) + "<\/td>");
+                if (column == columnsNumber) columnValueCounter += column;
             }
             document.write("</tr>")
         }
         document.write("</table>")
     </script>
 </body>
+
 </html>
