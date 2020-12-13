@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-7 Hanoshenko Vlad</title>
+</head>
+
+<body>
+    <script>
+        var columnsNumber = prompt("Введіть число стовбчиків")
+        var rowsNumbers = prompt("Введіть число рядків")
+        document.write("<table>")
+        var columnValueCounter = 0;
+        for (var row = 0; row < rowsNumbers; row++) {
+            document.write("<tr>")
+
+            for (var column = 1; column <= columnsNumber; column++) {
+                if(row == 0) document.write("<td bgcolor='4d4dff'>" + column + " столбец" + "<\/td>");
+                else document.write("<td>" + (column + columnValueCounter) + "<\/td>");
+                if(column == columnsNumber) columnValueCounter += column;
+            }
+            document.write("</tr>")
+        }
+        document.write("</table>")
+    </script>
+</body>
+</html>

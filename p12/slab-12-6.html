@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-6 Hanoshenko Vladyslav</title>
+</head>
+
+<body>
+    <script>
+        var parsedResult = prompt("Введіть будь-яке число або числа з дробовою частиною. Якщо чисел декілька - розділяйте їх комою");
+        var result = parsedResult.split(',');
+
+        var floatResultArray = [];
+        for (var i = 0; i < result.length; i++) {
+            floatResultArray.push(parseFloat(result[i]));
+        }
+        var roundMethod = prompt("Введіть метод округлення 'round', 'ceil' або 'floor'");
+
+        function roundArray(array, method) {
+            var arrayToBeReturned = [];
+            document.write("<p>Вибраний метод округлення:" + method + "<\/p>");
+            array.forEach(element => {
+                switch (method) {
+                    case "round":
+                        arrayToBeReturned.push(Math.round(element));
+                        break;
+                    case "ceil":
+                        arrayToBeReturned.push(Math.ceil(element));
+                        break;
+                    case "floor":
+                        arrayToBeReturned.push(Math.floor(element));
+                        break;
+                }
+            });
+            return arrayToBeReturned;
+        }
+        document.write("<p><strong>Значення до конвертування: <\/strong>" + floatResultArray + "<\/p>");
+        document.write("<p><strong>Значення після конвертування: <\/strong>" + roundArray(floatResultArray, roundMethod) + "<\/p>");
+    </script>
+
+</body>
+
+</html>

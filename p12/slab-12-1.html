@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-1. Hanoshenko</title>
+</head>
+<body>
+    <script>
+        function getMineralSuffix(n){
+            var suffix = n == 1 ? "мінерал" : "мінерали";
+            return suffix;
+        }
+        var result;
+        do{
+            var result = prompt("Введіть число від 1 до 10");
+        }
+        while(result == null || result == '');
+        document.write ("<p>В породі " + result + " " + getMineralSuffix(parseInt(result)) + "<\/p>");
+    </script>
+</body>
+</html>
