@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab12 final</title>
+</head>
+
+<body>
+    <script>
+        function radiationExposure(start, stop, step) {
+            tot = 0;
+            while (start < stop) {
+                tot += f(start) * step
+                start += step
+            }
+            return tot
+        }
+
+        function f(x) {
+            return 10 * Math.pow(Math.E, (Math.log(0.5) / 5.27 * x))
+        }
+
+        document.write("<p>Test case 1: radiationExposure(0, 5, 1)<br>" + radiationExposure(0, 5, 1) + "<\/p>");
+        document.write("<p>Test case 2: radiationExposure(5, 11, 1)<br>" + radiationExposure(5, 11, 1) + "<\/p>");
+        document.write("<p>Test case 3: radiationExposure(0, 11, 1)<br>" + radiationExposure(0, 11, 1) + "<\/p>");
+        document.write("<p>Test case 4: radiationExposure(40, 100, 1.5)<br>" + radiationExposure(40, 100, 1.5) + "<\/p>");
+    </script>
+
+</body>
+
+</html>

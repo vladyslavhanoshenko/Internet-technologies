@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-8 Hanoshenko Vlad</title>
+</head>
+<body>
+    <script>
+        function Menuitem(pTitle, pColor, pUrl) {
+            this.title = pTitle
+            this.color = pColor
+            this.url = pUrl
+
+            this.show = function() {
+                document.write("<p>"+ this.title+" ; Цвет: " + this.color + " ; Адрес: "+ this.url + "</p>")
+            }
+        }
+        var menu = new Menuitem("Блок", "красный", "https://www.search.com");
+        menu.show();
+    </script>
+</body>
+</html>
